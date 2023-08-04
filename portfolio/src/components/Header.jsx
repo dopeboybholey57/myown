@@ -38,7 +38,7 @@ const Header = () => {
                     <img src={Redux} alt="two" className='absolute bottom-7 md:bottom-20 left-3 2xl:left-12 w-12 h-12 md:w-20 md:h-20'/>
                     <img src={Mongodb} alt="two" className='absolute top-3 md:top-20 right-0 2xl:right-8 w-16 h-16 md:w-20 md:h-20'/>
                     <img src={Nodejs} alt="two" className='absolute bottom-7 md:bottom-20 right-3 2xl:right-12 w-12 h-12 md:w-20 md:h-20'/>
-                    <h1>dd</h1>
+                    
                 </div>
             </div>
         </div>
