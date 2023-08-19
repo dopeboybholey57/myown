@@ -19,7 +19,7 @@ of bootcamp structure, learning JavaScript, NodeJs,
 ReactJs, NextJs
 and TypeScript. Eager to tackle web development/design
 challenges to
-achieve lasting impacts on user experience.</p>
+achieve lasting impacts on user experience..</p>
             </div>
 
     </div>
