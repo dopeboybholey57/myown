@@ -33,11 +33,11 @@ export const projectStats = [
   },
   {
     name: "Clients worldwide",
-    value: "+86",
+    value: "86+",
   },
 ];
 
-export const tools = [
+export const toolsofme = [
   {
     name: "MongoDB",
     icon: Mongodb,
