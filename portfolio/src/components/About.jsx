@@ -24,7 +24,12 @@ and TypeScript. Eager to tackle web development/design
 challenges to
 achieve lasting impacts on user experience.</p>
 
-<div className='mt-5 2xl:mt-10 flex flex-wrap gap-5'>
+<div className='mt-5 2xl:mt-10 flex flex-wrap gap-5'
+data-aos='fade-up'
+data-aos-offset='200'
+data-aos-delay='50'
+data-aos-duration='1000'
+data-aos-easing='ease-in-out'>
 <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
   <FaUserAlt size={14}/> Bholenath
 </p>
