@@ -4,7 +4,12 @@ import { projectStats, toolsofme } from '../data'
 const Project = () => {
   return (
     <div>
-        <div className='w-full flex flex-wrap items-center justify-center gap-10 lg:gap-20 pt-10'>
+        <div className='w-full flex flex-wrap items-center justify-center gap-10 lg:gap-20 pt-10'
+        data-aos='fade-down'
+        data-aos-offset='200'
+        data-aos-delay='50'
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
             {
                projectStats.map((p, index)=>(
                 <div className='flex flex-col gap-2 items-center px-4 py-3 bg-[#0000FF20] rounded-md'>
@@ -15,7 +20,14 @@ const Project = () => {
             }
         </div>
 
-        <div className='w-full flex flex-wrap items-center justify-center gap-10 lg:gap-20 mt-16'>
+        <div
+        data-aos='fade-up'
+        data-aos-offset='200'
+        data-aos-delay='50'
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'
+        
+        className='w-full flex flex-wrap items-center justify-center gap-10 lg:gap-20 mt-16'>
             {
                 toolsofme.map((t, index)=> (
                     <div className='flex gap-2 items-center bg-white rounded-md shadow-lg px-5 py-1'>

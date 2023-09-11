@@ -1,5 +1,8 @@
 import React from 'react'
 import { Profile } from '../assets'
+import {FaUserAlt} from "react-icons/fa";
+import {MdOutlineAlternateEmail, MdWifiCalling2} from "react-icons/md"
+import {BsWhatsapp} from "react-icons/bs"
 
 const About = () => {
   return (
@@ -20,6 +23,26 @@ ReactJs, NextJs
 and TypeScript. Eager to tackle web development/design
 challenges to
 achieve lasting impacts on user experience.</p>
+
+<div className='mt-5 2xl:mt-10 flex flex-wrap gap-5'
+data-aos='fade-up'
+data-aos-offset='200'
+data-aos-delay='50'
+data-aos-duration='1000'
+data-aos-easing='ease-in-out'>
+<p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+  <FaUserAlt size={14}/> Bholenath
+</p>
+<p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+  <MdOutlineAlternateEmail size={14}/> sadanandbholenath57@gmail.com
+</p>
+<a href='https://wa.me/+919550305134' className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+  <BsWhatsapp size={14}/> +91 9550305134
+</a>
+<p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+  <MdWifiCalling2 size={14}/> +91 9154167955
+</p>
+</div>
             </div>
 
     </div>
