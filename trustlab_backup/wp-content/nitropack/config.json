@@ -1,0 +1,31 @@
+{
+    "mytrustlab.com": {
+        "siteId": "uzXkWaAnYWULnPNSfMLgtMsnNEmOuaUe",
+        "siteSecret": "lkuIspnRKVKjXnN71m38QoZQ43TtqosXuIEr5zDywFcxpT8lyOeBvWZo3fMKylHo",
+        "blogId": 1,
+        "compression": true,
+        "webhookToken": "f6242e5c5c8e3ff492876bff35c76a34",
+        "home_url": "https:\/\/mytrustlab.com",
+        "admin_url": "https:\/\/mytrustlab.com\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isApoActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "isWoocommerceCacheHandlerActive": false,
+        "isWoocommerceActive": false,
+        "isAeliaCurrencySwitcherActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.5.14",
+        "options_cache": {
+            "cache_handler_cache_handler": false,
+            "woocommerce_default_customer_address": false,
+            "wc_aelia_currency_switcher": {
+                "ipgeolocation_enabled": null
+            }
+        }
+    },
+    "config_path": "db6177cd35b625b9f52e2a10ce4afab8"
+}
