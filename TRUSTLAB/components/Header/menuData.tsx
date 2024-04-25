@@ -75,6 +75,13 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/support",
   },
+
+  // {
+  //   id: 5,
+  //   title: "Packages",
+  //   newTab: false,
+  //   path: "/support",
+  // },
 ];
 
 export default menuData;

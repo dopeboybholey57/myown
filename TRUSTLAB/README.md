@@ -87,3 +87,7 @@ Solid Free is 100% free and open-source, feel free to use with your personal and
 If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
 
 ### ✨ Browse and Download - Best Free [Next.js Templates](https://nextjstemplates.com/templates)
+
+Blue - 2B3990
+
+Green - 009444

@@ -17,6 +17,8 @@ module.exports = {
     extend: {
       colors: {
         current: "currentColor",
+        myblue:"#2B3990",
+        mygreen:"#009444",
         transparent: "transparent",
         stroke: "#EEEEEE",
         strokedark: "#2D2F40",
