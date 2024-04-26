@@ -6,11 +6,16 @@ import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import loginsData from "./logins";
+
+
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const pathUrl = usePathname();
 
@@ -38,11 +43,11 @@ const Header = () => {
         <div className="flex w-full items-center justify-between xl:w-1/3">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/logo/logo-dark.png"
               alt="logo"
-              width={119.03}
+              width={175}
               height={30}
-              className="hidden w-full dark:block"
+              className="hidden dark:block"
             />
             <Image
               src="/images/logo/logo-light.png"
@@ -154,12 +159,37 @@ const Header = () => {
               Help 🤝
             </Link>
 
-            <Link
-              href="https://nextjstemplates.com/templates/solid"
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+
+
+
+{/* ORIGINAL */}
+            {/* <Link
+              href="/auth/signin"
+              className="flex items-center justify-center rounded-full bg-myblue px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho" 
+            >      
+              Login 🔒
+            </Link> */}
+
+
+{/* MANUAL */}
+            {/* <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="flex items-center justify-center rounded-full bg-myblue px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"        
             >
               Login 🔒
-            </Link>
+
+              {isOpen && (
+        <div className="absolute right-0 mt-35 w-40 bg-white rounded-lg shadow-lg">
+          <ol>
+            <a className="text-mygreen border-b mb-10" href="/Signin">Patient Login</a><br/>
+            <a className="text-mygreen border-b">Doctors Login</a><br/>
+            <a className="text-mygreen border-b">Corporate Login</a><br/>
+          </ol>
+        </div>
+      )}
+            </button> */}
+
+
           </div>
         </div>
       </div>

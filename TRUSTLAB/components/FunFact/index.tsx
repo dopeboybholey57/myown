@@ -15,7 +15,7 @@ const FunFact = () => {
             src="/images/shape/shape-04.png"
             alt="Man"
             className="absolute -left-15 -top-25 -z-1 lg:left-0"
-          />
+          />  
           <Image
             width={132}
             height={132}
@@ -53,19 +53,17 @@ const FunFact = () => {
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
+            className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-13.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Trusted by Global Companies.
+              Since April 2021...
             </h2>
             <p className="mx-auto lg:w-11/12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            With each passing day, we've strived to redefine industry standards, leveraging innovation and dedication to elevate the quality of our services. 
             </p>
           </motion.div>
 
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-42.5">
+          <div className="flex flex-wrap justify-center gap-8 lg:gap-32.5">
             <motion.div
               variants={{
                 hidden: {
@@ -84,10 +82,33 @@ const FunFact = () => {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                500K
+              <h3 className="mb-2.5 text-3xl font-bold text-myblue dark:text-white xl:text-sectiontitle3">
+                5.2L +
               </h3>
-              <p className="text-lg lg:text-para2">World Wide Clients</p>
+              <p className="text-lg lg:text-para1">Customers tested</p>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="animate_top text-center"
+            >
+              <h3 className="mb-2.5 text-3xl font-bold text-mygreen dark:text-white xl:text-sectiontitle3">
+                6.4L 
+              </h3>
+              <p className="text-lg lg:text-para1 text-mygreen">Reports delivered</p>
             </motion.div>
             <motion.div
               variants={{
@@ -107,10 +128,10 @@ const FunFact = () => {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                1M+
+              <h3 className="mb-2.5 text-3xl font-bold text-myblue dark:text-white xl:text-sectiontitle3">
+                185
               </h3>
-              <p className="text-lg lg:text-para2">Downloads</p>
+              <p className="text-lg lg:text-para1">Doctors Associated</p>
             </motion.div>
             <motion.div
               variants={{
@@ -130,10 +151,10 @@ const FunFact = () => {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                865
+              <h3 className="mb-2.5 text-3xl font-bold text-mygreen dark:text-white xl:text-sectiontitle3">
+                350
               </h3>
-              <p className="text-lg lg:text-para2">Winning Award</p>
+              <p className="text-lg lg:text-para1 text-mygreen">Network Partners</p>
             </motion.div>
           </div>
         </div>

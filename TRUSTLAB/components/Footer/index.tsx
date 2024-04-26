@@ -30,9 +30,9 @@ const Footer = () => {
               >
                 <a href="index.html" className="relative">
                   <Image
-                    width={110}
+                    width={200}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo-light.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
@@ -46,17 +46,17 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Your well-being is our priority, and we're here to support you every step of the way.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
                 </p>
                 <a
-                  href="#"
-                  className="text-itemtitle font-medium text-black dark:text-white"
+                  href="mailto:customercare@mytrustlab.com"
+                  className="text-para3 font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  customercare@mytrustlab.com
                 </a>
               </motion.div>
 
@@ -245,44 +245,8 @@ const Footer = () => {
 
           {/* <!-- Footer Bottom --> */}
           <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
 
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top"
-            >
-              <ul className="flex items-center gap-8">
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </motion.div>
-
-            <motion.div
+          <motion.div
               variants={{
                 hidden: {
                   opacity: 0,
@@ -301,11 +265,51 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} TRUSTlab Diagnostics Pvt Ltd. All rights reserved
               </p>
             </motion.div>
+            
 
             <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_top"
+            >
+              {/* <ul className="flex items-center gap-8">
+                <li>
+                  <a href="#" className="hover:text-primary">
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary">
+                    Support
+                  </a>
+                </li>
+              </ul> */}
+
+              <a href="https://bholenath-portfolio.vercel.app/" target="_blank">Designed & Developed - Bholenath S</a>
+            </motion.div>
+
+            {/* <motion.div
               variants={{
                 hidden: {
                   opacity: 0,
@@ -417,7 +421,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </motion.div>
+            </motion.div> */}
           </div>
           {/* <!-- Footer Bottom --> */}
         </div>
