@@ -1,47 +1,28 @@
 import { Menu } from "@/types/menu";
 
 const loginsData: Menu[] = [
-
-{
-    id: 3,
-    title: "Departments",
+  {
+    id: 1,
+    title: "Login",
     newTab: false,
     submenu: [
       {
-        id: 31,
-        title: "Clinical Pathology",
-        newTab: false,
-        path: "/blog",
-      },
-      {
-        id: 34,
-        title: "Clinical Microbiology",
+        id: 1,
+        title: "Patients & Individuals",
         newTab: false,
         path: "/auth/signin",
       },
       {
-        id: 35,
-        title: "Clinical Biochemistry",
+        id: 2,
+        title: "Healthcare Professionals",
         newTab: false,
-        path: "/auth/signup",
+        path: "/doctor",
       },
       {
-        id: 35,
-        title: "Molecular Biology",
+        id: 3,
+        title: "Clinical Pathology",
         newTab: false,
-        path: "/docs",
-      },
-      {
-        id: 35.1,
-        title: "Serology",
-        newTab: false,
-        path: "/support",
-      },
-      {
-        id: 36,
-        title: "Haematology",
-        newTab: false,
-        path: "/error",
+        path: "/blog",
       },
     ],
   },

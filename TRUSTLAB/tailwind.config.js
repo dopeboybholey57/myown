@@ -24,6 +24,7 @@ module.exports = {
         strokedark: "#2D2F40",
         hoverdark: "#252A42",
         mybg:"#6CA0DC",
+        mypink:"#FCBACB",
         titlebg: "#ADFFF8",
         titlebg2: "#FFEAC2",
         titlebgdark: "#46495A",

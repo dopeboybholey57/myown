@@ -150,16 +150,69 @@ const Header = () => {
           </nav>
 
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
-            <ThemeToggler />
+            
 
-            <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
+            {/* <Link
+              href="/support"
               className="text-regular font-medium text-waterloo hover:text-primary"
             >
               Help 🤝
-            </Link>
+            </Link> */}
 
+    
+    {/* ------------------------------------------ */}
+              
 
+            <nav className="flex rounded-full bg-zumthor px-7.5 py-2.5 text-black duration-300 ease-in-out dark:bg-btndark dark:hover:bg-blackho dark:text-white">
+            <ul className="flex flex-col gap-5 xl:flex-row xl:items-left xl:gap-10">
+              {loginsData.map((loginItem, key) => (
+                <li key={key} className={loginItem.submenu && "group relative"}>
+                  {loginItem.submenu ? (
+                    <>
+                      <button
+                        onClick={() => setDropdownToggler(!dropdownToggler)}
+                        className="flex cursor-pointer items-center justify-between gap-3"
+                      >
+                        {loginItem.title}
+                        <span>
+                          <svg
+                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                          </svg>
+                        </span>
+                      </button>
+
+                      <ul
+                        className={`dropdown ${dropdownToggler ? "flex" : ""}`}
+                      >
+                        {loginItem.submenu.map((item, key) => (
+                          <li key={key} className="hover:text-primary text-sm">
+                            <Link href={item.path || "#"}>{item.title}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : (
+                    <Link
+                      href={`${loginItem.path}`}
+                      className={
+                        pathUrl === loginItem.path
+                          ? "text-primary hover:text-primary"
+                          : "hover:text-primary"
+                      }
+                    >
+                      {loginItem.title}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <ThemeToggler />
 
 
 {/* ORIGINAL */}
