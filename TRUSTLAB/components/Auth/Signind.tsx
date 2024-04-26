@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const Signinc = () => {
+const Signind = () => {
   const [data, setData] = useState({
     email: "",
     password: "",
@@ -50,7 +50,7 @@ const Signinc = () => {
             className="animate_top rounded-lg bg-white px-7.5 pt-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black xl:px-15 xl:pt-15"
           >
             <h2 className="mb-15 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-              Login | Corporate
+              Login | Health Care Professionals
             </h2>
             <div className="flex flex-col">
               <div className="flex items-center gap-8">
@@ -223,4 +223,4 @@ const Signinc = () => {
   );
 };
 
-export default Signinc;
+export default Signind;
