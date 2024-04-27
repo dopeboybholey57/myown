@@ -15,6 +15,8 @@ const Header = () => {
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 
+
+
   const [isOpen, setIsOpen] = useState(false);
 
   const pathUrl = usePathname();
@@ -163,6 +165,10 @@ const Header = () => {
     {/* ------------------------------------------ */}
               
 
+            
+
+          
+            
             <nav className="flex rounded-full bg-zumthor px-7.5 py-2.5 text-black duration-300 ease-in-out dark:bg-btndark dark:hover:bg-blackho dark:text-white">
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-left xl:gap-10">
               {loginsData.map((loginItem, key) => (
@@ -189,7 +195,7 @@ const Header = () => {
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
                         {loginItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-primary text-sm">
+                          <li key={key} className="hover:text-primary text-sm cursor-pointer">
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
                         ))}
@@ -211,6 +217,8 @@ const Header = () => {
               ))}
             </ul>
           </nav>
+          
+          
 
           <ThemeToggler />
 

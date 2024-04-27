@@ -7,6 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "../globals.css";
+import { Auth0Provider } from '@auth0/auth0-react';
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
