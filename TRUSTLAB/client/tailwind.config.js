@@ -25,6 +25,7 @@ module.exports = {
         hoverdark: "#252A42",
         mybg:"#6CA0DC",
         mypink:"#FCBACB",
+        mysection:"#ECFBFC",
         titlebg: "#ADFFF8",
         titlebg2: "#FFEAC2",
         titlebgdark: "#46495A",
