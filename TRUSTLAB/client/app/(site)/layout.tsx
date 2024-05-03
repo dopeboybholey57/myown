@@ -1,5 +1,5 @@
 "use client";
-
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
+        <AppRouterCacheProvider>
         <ThemeProvider
           enableSystem={false}
           attribute="class"
@@ -32,6 +33,7 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
         </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

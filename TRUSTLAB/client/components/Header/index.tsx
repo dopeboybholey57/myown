@@ -167,7 +167,7 @@ const Header = () => {
 
           
             
-            <nav className="flex rounded-full bg-zumthor px-7.5 py-2.5 text-black duration-300 ease-in-out dark:bg-btndark dark:hover:bg-blackho dark:text-white">
+            {/* <nav className="flex rounded-full bg-zumthor px-7.5 py-2.5 text-black duration-300 ease-in-out dark:bg-btndark dark:hover:bg-blackho dark:text-white">
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-left xl:gap-10">
               {loginsData.map((loginItem, key) => (
                 <li key={key} className={loginItem.submenu && "group relative"}>
@@ -215,11 +215,20 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-          </nav>
-          
-          
+          </nav> */}
 
-          <ThemeToggler />
+
+        {/* <nav className="flex rounded-full bg-myblue px-7.5 py-2.5 text-white duration-300 ease-in-out dark:bg-btndark dark:hover:bg-blackho dark:text-white">
+          📞 Call us Now
+        </nav> */}
+
+<a href="tel:04035102102">
+        <button className="flex rounded-full bg-zumthor px-7.5 py-2.5 text-black duration-300 ease-in-out dark:bg-btndark dark:hover:bg-blackho dark:text-white">
+        📞 Call us Now
+        </button>
+        </a>
+
+          {/* <ThemeToggler /> */}
 
          
 

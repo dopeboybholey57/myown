@@ -28,23 +28,14 @@ const Hero = () => {
                   on time
                 </span>
               </h1> */}
-              <div className="herotexttype text-black xl:text-hero pr-16">
-
               
+              <div className="herotexttype text-black xl:text-hero pr-16 leading-6">
+
 <Typewriter
-                onInit={(typewriter) => {
-                    typewriter
-                        .typeString("Delivering Accurate reports on time")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("Serving patients with compassion and reliability")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("Accurate and timely diagnostic reports")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("Helping doctors take a deeper look")
-                        .start();
+                options={{
+                strings: ['Delivering Accurate reports on time', 'Serving patients with compassion and reliability', 'Accurate and timely diagnostic reports', 'Helping doctors take a deeper look'],
+                  autoStart: true,
+                  loop: true,
                 }}
             />
 
