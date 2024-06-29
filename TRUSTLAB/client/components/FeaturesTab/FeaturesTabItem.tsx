@@ -1,9 +1,11 @@
 import React from "react";
 import { FeatureTab } from "@/types/featureTab";
 import Image from "next/image";
+import { Button } from "@mui/material";
+import Link from "next/link";
 
 const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
-  const { title, desc1, desc2, image, imageDark } = featureTab;
+  const { title, desc1, desc2, image, imageDark, onlyUrl} = featureTab;
 
   return (
     <>
@@ -13,7 +15,14 @@ const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
             {title}
           </h2>
           <p className="mb-5">{desc1}</p>
-          <p className="w-11/12">{desc2}</p>
+          {/* <p className="w-11/12">{desc2}</p> */}
+          
+          <a href={onlyUrl}>
+          <Button variant="contained">Login</Button>
+          </a>
+          
+          
+          
         </div>
         <div className="relative mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2">
           <Image src={image} alt={title} fill className="dark:hidden" />

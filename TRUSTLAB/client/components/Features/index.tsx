@@ -48,7 +48,7 @@ const Feature = () => {
 
 <Grid container spacing={2}>
 
-<Grid item xs={3} md={3}>
+<Grid item xs={12} md={3}>
 <Packagecard 
 image="/images/icon/pack1.png"
 thepack="The Package Name"
@@ -57,7 +57,7 @@ price="Book Now for ₹449"
 />
 </Grid>
 
-<Grid item xs={3} md={3}>
+<Grid item xs={12} md={3}>
 <Packagecard 
 image="/images/icon/pack2.png"
 thepack="The Package Name"
@@ -66,7 +66,7 @@ price="Book Now for ₹449"
 />
 </Grid>
 
-<Grid item xs={3} md={3}>
+<Grid item xs={12} md={3}>
 <Packagecard 
 image="/images/icon/pack3.png"
 thepack="The Package Name"
@@ -75,7 +75,7 @@ price="Book Now for ₹449"
 />
 </Grid>
 
-<Grid item xs={3} md={3}>
+<Grid item xs={12} md={3}>
 <Packagecard 
 image="/images/icon/pack4.png"
 thepack="The Package Name"

@@ -10,7 +10,6 @@ import menuData from "./menuData";
 import loginsData from "./logins";
 
 
-
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
