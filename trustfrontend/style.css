@@ -623,7 +623,7 @@ body{
 }
 .slider .single-slider .btn{
 	color:#fff;
-	background:#009247;
+	background:#1F2B7B;
 	font-weight:500;
 	display:inline-block;
 	margin:0;
@@ -1102,7 +1102,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('img/thebg.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -1114,13 +1114,15 @@ body{
 }
 .call-action .content h2{
 	color:#fff;
-	font-size:32px;
+	font-size:30px;
 	font-weight:600;
 	line-height:46px;
 }
 .call-action .content p {
 	color: #fff;
-	margin: 30px 0px;
+	/* margin: 20px 0px; */
+	margin-top: 15px;
+	margin-bottom: 30px;
 	font-size: 15px;
 }
 .call-action .content .btn{
