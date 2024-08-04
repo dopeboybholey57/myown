@@ -46,6 +46,64 @@
 		<script>
 			AOS.init();
 		  </script>
+
+		  <style>
+			.card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .card p {
+            margin: 10px 0;
+            color: #555;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .card .price {
+            font-size: 1.2em;
+            color: #e74c3c;
+            text-align: center;
+            /* margin: 5px 0; */
+			display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .price del {
+            color: #888;
+            margin-right: 10px;
+        }
+        .card .offer-price {
+            font-size: 1.4em;
+            color: #27ae60;
+        }
+        .card .more-details {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px auto;
+            background-color: #1F2B7B;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+        .card .more-details:hover {
+            background-color: #009247;
+        }
+		  </style>
 		
     </head>
     <body>
@@ -107,27 +165,27 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Home</a>
+											<li class="active"><a href="index.html">Home</a>
 												<!-- <ul class="dropdown">
 													<li><a href="index.html">Home Page 1</a></li>
 												</ul> -->
 											</li>
 											<li><a href="#">Departments <i class="icofont-rounded-down"></i> </a>
 											<ul class="dropdown">
-													<li><a href="index.html">Biochemistry</a></li>
-													<li><a href="index.html">Haematology</a></li>
-													<li><a href="index.html">Clinical Pathology</a></li>
-													<li><a href="index.html">Genomics</a></li>
-													<li><a href="index.html">Serology</a></li>
-													<li><a href="index.html">Micro Biology</a></li>
+													<li><a href="comingsoon.html">Biochemistry</a></li>
+													<li><a href="comingsoon.html">Haematology</a></li>
+													<li><a href="comingsoon.html">Clinical Pathology</a></li>
+													<li><a href="comingsoon.html">Genomics</a></li>
+													<li><a href="comingsoon.html">Serology</a></li>
+													<li><a href="comingsoon.html">Micro Biology</a></li>
 												</ul>
 											</li>
 											<!-- <li><a href="#">Services </a></li> -->
 											<li><a href="#">Services <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="login.html">Book a Test</a></li>
-													<li><a href="#">Doctor Appointment</a></li>
-													<li><a href="#">Order Medicine</a></li>
+													<li><a href="login.html">Doctor Appointment</a></li>
+													<li><a href="login.html">Order Medicine</a></li>
 
 												</ul>
 											</li>
@@ -167,7 +225,7 @@
 									<h1>We Provide Diagnostic Services That You Can <span>Trust!</span></h1>
 									<p>Our state-of-the-art facilities and experienced professionals ensure you receive top-notch diagnostic services. Trust us for comprehensive, precise, and timely health insights.</p>
 									<div class="button">
-										<a href="#" class="btn">Book Appointment</a>
+										<a href="login.html" class="btn">Book Appointment</a>
 										<a href="tel:+917440075400" class="btn primary">Call Us</a>
 									</div>
 								</div>
@@ -185,7 +243,7 @@
 									<h1>Delivering Highly Accurate Reports <span> On Time </span></h1>
 									<p>Our advanced technology and skilled team work diligently to deliver precise reports swiftly. Count on us for reliable diagnostics that meet your schedule. </p>
 									<div class="button">
-										<a href="#" class="btn">Book Appointment</a>
+										<a href="login.html" class="btn">Book Appointment</a>
 										<a href="tel:+917440075400" class="btn primary">Call Us</a>
 									</div>
 								</div>
@@ -203,7 +261,7 @@
 									<h1>Serving Patients With Compassion And <span>Reliability</span></h1>
 									<p>We put patients first with our compassionate approach and dependable services. Our dedicated team ensures every patient receives personalized and accurate diagnostics.</p>
 									<div class="button">
-										<a href="#" class="btn">Book Appointment</a>
+										<a href="login.html" class="btn">Book Appointment</a>
 										<a href="tel:+917440075400" class="btn primary">Call Us</a>
 									</div>
 								</div>
@@ -232,7 +290,7 @@
 										<!-- <span>PATIENTS & INDIVIDUALS</span> -->
 										<h4>Patients & Individuals</h4>
 										<p>Log in to your patient account to view your test results, schedule appointments, and manage your health profile with ease.</p>
-										<a href="#">Login<i class="fa fa-long-arrow-right"></i></a>
+										<a href="login.html">Login<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -249,7 +307,7 @@
 										<h4>Healthcare Professionals</h4>
 										<p>Calling all medical professionals! Sign in to your doctor account to access patient records, manage appointments, and collaborate with colleagues seamlessly.
 										</p>
-										<a href="#">Login<i class="fa fa-long-arrow-right"></i></a>
+										<a href="login.html">Login<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -275,7 +333,7 @@
 										<!-- <span>PATIENTS & INDIVIDUALS</span> -->
 										<h4>Corporates & Providers</h4>
 										<p>Corporate partners, welcome aboard! Log in to your corporate account to streamline employee health programs, access health reports</p>
-										<a href="#">Login<i class="fa fa-long-arrow-right"></i></a>
+										<a href="login.html">Login<i class="fa fa-long-arrow-right"></i></a>
 									</div>	
 								</div>
 							</div>
@@ -491,37 +549,96 @@
 				<div class="row">
 					<div class="col-lg-12 col-12">
 						<div class="owl-carousel portfolio-slider">
-							<div class="single-pf">
-								<img src="img/pack1.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+							<div>
+								<div class="card">
+									<h5>Comprehensive Health Checkup</h5>
+										<p style="text-align: left;">Includes blood test, ECG, urine test, and more.</p>
+									<div class="price">
+										<del style="text-align: left;">$200</del>
+										<span class="offer-price">$150</span>
+										<a href="comingsoon.html" class="more-details">More Details</a>
+									</div>
+									
+								</div>
+								
+								
 							</div>
-							<div class="single-pf">
-								<img src="img/pack2.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+
+							<div>
+								<div class="card">
+									<h5>Comprehensive Health Checkup</h5>
+										<p style="text-align: left;">Includes blood test, ECG, urine test, and more.</p>
+									<div class="price">
+										<del style="text-align: left;">$200</del>
+										<span class="offer-price">$150</span>
+										<a href="comingsoon.html" class="more-details">More Details</a>
+									</div>
+									
+								</div>
+								
+								
 							</div>
-							<div class="single-pf">
-								<img src="img/pack3.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+
+							<div>
+								<div class="card">
+									<h5>Comprehensive Health Checkup</h5>
+										<p style="text-align: left;">Includes blood test, ECG, urine test, and more.</p>
+									<div class="price">
+										<del style="text-align: left;">$200</del>
+										<span class="offer-price">$150</span>
+										<a href="comingsoon.html" class="more-details">More Details</a>
+									</div>
+									
+								</div>
+								
+								
 							</div>
-							<div class="single-pf">
-								<img src="img/pack4.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+
+							<div>
+								<div class="card">
+									<h5>Comprehensive Health Checkup</h5>
+										<p style="text-align: left;">Includes blood test, ECG, urine test, and more.</p>
+									<div class="price">
+										<del style="text-align: left;">$200</del>
+										<span class="offer-price">$150</span>
+										<a href="comingsoon.html" class="more-details">More Details</a>
+									</div>
+									
+								</div>
+								
+								
 							</div>
-							<div class="single-pf">
-								<img src="img/pack5.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+
+							<div>
+								<div class="card">
+									<h5>Comprehensive Health Checkup</h5>
+										<p style="text-align: left;">Includes blood test, ECG, urine test, and more.</p>
+									<div class="price">
+										<del style="text-align: left;">$200</del>
+										<span class="offer-price">$150</span>
+										<a href="comingsoon.html" class="more-details">More Details</a>
+									</div>
+									
+								</div>
+								
+								
 							</div>
-							<div class="single-pf">
-								<img src="img/pack6.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+
+							<div>
+								<div class="card">
+									<h5>Comprehensive Health Checkup</h5>
+										<p style="text-align: left;">Includes blood test, ECG, urine test, and more.</p>
+									<div class="price">
+										<del style="text-align: left;">$200</del>
+										<span class="offer-price">$150</span>
+										<a href="comingsoon.html" class="more-details">More Details</a>
+									</div>
+									
+								</div>
+								
+								
 							</div>
-							<div class="single-pf">
-								<img src="img/pack7.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="img/pack8.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								
 							</div>
 						</div>
 					</div>
@@ -531,7 +648,7 @@
 		<!--/ End portfolio -->
 		
 		<!-- Start service -->
-		<section class="services section">
+		<!-- <section class="services section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -544,62 +661,62 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Start Single Service -->
+						
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
 							<h4><a href="service-details.html">General Treatment</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
-						<!-- End Single Service -->
+						
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Start Single Service -->
+						
 						<div class="single-service">
 							<i class="icofont icofont-tooth"></i>
 							<h4><a href="service-details.html">Teeth Whitening</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
-						<!-- End Single Service -->
+						
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Start Single Service -->
+						
 						<div class="single-service">
 							<i class="icofont icofont-heart-alt"></i>
 							<h4><a href="service-details.html">Heart Surgery</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
-						<!-- End Single Service -->
+						
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Start Single Service -->
+						
 						<div class="single-service">
 							<i class="icofont icofont-listening"></i>
 							<h4><a href="service-details.html">Ear Treatment</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
-						<!-- End Single Service -->
+						
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Start Single Service -->
+						
 						<div class="single-service">
 							<i class="icofont icofont-eye-alt"></i>
 							<h4><a href="service-details.html">Vision Problems</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
-						<!-- End Single Service -->
+						
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Start Single Service -->
+						
 						<div class="single-service">
 							<i class="icofont icofont-blood"></i>
 							<h4><a href="service-details.html">Blood Transfusion</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
-						<!-- End Single Service -->
+						
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!--/ End service -->
 		
 		<!-- Pricing Table -->
@@ -712,9 +829,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Keep up with Our Most Recent Medical News.</h2>
+							<h2>Keep up with the Most Recent Health & Diagnostics News.</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
 						</div>
 					</div>
 				</div>
@@ -723,13 +840,13 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="img/blog1.jpg" alt="#">
+								<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/for-women--seed-cycling-should-align-with-the-four-phases-of-their-menstrual-cycle-244746693-16x9.jpg?VersionId=oDKP_d3Ma9PsXxvf.qyOo4rxm9W2Df5K&size=690:388" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">22 Aug, 2020</div>
-									<h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<h2><a href="blog-single.html">9 vital women's health screenings</a></h2>
+									<p class="text">In this article, we'll delve into the essential health screenings every woman should undergo to safeguard her health.</p>
 								</div>
 							</div>
 						</div>
@@ -739,13 +856,13 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="img/blog2.jpg" alt="#">
+								<img src="img/blogg2.jpg" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">15 Jul, 2020</div>
-									<h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<h2><a href="blog-single.html">Eyeing a healthcare career? Here are the trending roles</a></h2>
+									<p class="text">The Indian healthcare has seen a lot of growth in past few years and is becoming an economic backbone of the nation.</p>
 								</div>
 							</div>
 						</div>
@@ -755,13 +872,13 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="img/blog3.jpg" alt="#">
+								<img src="img/blogg3.jpg" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">05 Jan, 2020</div>
-									<h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<h2><a href="blog-single.html">Important Tests to Undertake to Detect Diseases like AIDS</a></h2>
+									<p class="text">Early detection of AIDS (Acquired Immunodeficiency Syndrome) is crucial for effective treatment and management. </p>
 								</div>
 							</div>
 						</div>
@@ -911,7 +1028,7 @@
 						<!-- Start Newsletter Form -->
 						<div class="subscribe-text ">
 							<h6>Sign up for newsletter</h6>
-							<p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
+							<p class="">Stay updated with our latest news and offers<br> Subscribe to our newsletter today!</p>
 						</div>
 						<!-- End Newsletter Form -->
 					</div>
